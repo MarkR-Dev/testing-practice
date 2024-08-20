@@ -14,7 +14,7 @@ describe("Capitalise", () => {
   });
 
   test("Throws if type of argument isn't a string", () => {
-    expect(() => capitalise(123)).toThrow();
-    expect(() => capitalise()).toThrow();
+    expect(() => capitalise(123)).toThrow("You must provide a string");
+    expect(() => capitalise()).toThrow("You must provide a string");
   });
 });
